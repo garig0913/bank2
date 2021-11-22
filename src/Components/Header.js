@@ -6,7 +6,7 @@ import Timer from './Timer'
 
 const Header = props => {
     const { fullname } = props;
-    return <header className="w-full bg-white px-30 z-30 py-5 fixed top-0 left-0 flex justify-between shadow-sm items-center">
+    return <header className="w-full bg-white px-30 z-30 py-5 fixed top-0 left-0 flex justify-between shadow-sm items-center border">
         <div className="pl-4 flex items-center gap-3">
             <img className="w-8 ml-3" src={logo} alt='' />
             <h1 className="font-bold uppercase text-xl">
