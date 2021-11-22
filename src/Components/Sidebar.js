@@ -9,8 +9,12 @@ const Sidebar = (props) => {
         window.location.href = "/home";
     };
 
-    const exhangeController = () => {
-        window.location.href = "/exchange"
+    const transactionController = () => {
+        window.location.href = "/transaction"
+    }
+
+    const CardController = () => {
+        window.location.href = "/card"
     }
     return (
         <div
@@ -24,30 +28,30 @@ const Sidebar = (props) => {
                     className="flex w-44 ml-6 border-transparent rounded-lg hover:bg-green-900 mr-4 py-1.5 opacity-95 px-2 hover:opacity-80 hover:text-white text-green-800 text-md font-medium"
                 >
                     <MdAccountBalance className="mt-1 mr-3 text-xl" />
-                    <h1>home</h1>
+                    <h1>Home</h1>
                 </button>
                 <button
-                    onClick={exhangeController}
+                    onClick={transactionController}
                     className="flex w-44 mt-8 ml-6 border-transparent rounded-lg hover:bg-green-900 mr-4 py-1 opacity-95 px-2 hover:opacity-80 hover:text-white text-green-800 text-md font-medium"
                 >
                     <FaExchangeAlt className="mt-1 mr-3 text-xl" />
-                    <h1>exchange</h1>
+                    <h1>Transaction</h1>
                 </button>
-                <button className="flex w-44 mt-8 ml-6 border-transparent rounded-lg hover:bg-green-900 mr-4 py-1 opacity-95 px-2 hover:opacity-80 hover:text-white text-green-800 text-md font-medium">
+                <button onClick={CardController} className="flex w-44 mt-8 ml-6 border-transparent rounded-lg hover:bg-green-900 mr-4 py-1 opacity-95 px-2 hover:opacity-80 hover:text-white text-green-800 text-md font-medium">
                     <AiFillCreditCard className="mt-1 mr-3 text-xl" />
-                    <h1>card</h1>
+                    <h1>Card</h1>
                 </button>
                 <button className="flex w-44 mt-8 ml-6 border-transparent rounded-lg hover:bg-green-900 mr-4 py-1 opacity-95 px-2 hover:opacity-80 hover:text-white text-green-800 text-md font-medium">
                     <FaHandHoldingUsd className="mt-1 mr-3 text-xl" />
-                    <h1>loan</h1>
+                    <h1>Loan</h1>
                 </button>
                 <button className="flex w-44 mt-8 ml-6 border-transparent rounded-lg hover:bg-green-900 mr-4 py-1 opacity-95 px-2 hover:opacity-80 hover:text-white text-green-800 text-md font-medium">
                     <MdOutlinePriceChange className="mt-1 mr-3 text-xl" />
-                    <h1>payment</h1>
+                    <h1>Payment</h1>
                 </button>
                 <button className="flex w-44 mt-8 ml-6 border-transparent rounded-lg hover:bg-green-900 mr-4 py-1 opacity-95 px-2 hover:opacity-80 hover:text-white text-green-800 text-md font-medium">
                     <FaEllipsisH className="mt-1 mr-3 text-xl" />
-                    <h1>service</h1>
+                    <h1>Service</h1>
                 </button>
             </div>
 

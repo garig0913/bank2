@@ -1,0 +1,7 @@
+.grid {
+  grid-template-columns: 0.6fr 1fr;
+}
+
+.grids {
+  height: fit-content;
+}

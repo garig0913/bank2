@@ -77,7 +77,7 @@ const Home = () => {
             {/* grid2 */}
             <div className="grids flex flex-col ">
                 <Info first="Payment Information" second="Total" />
-                <div className="flex">
+                <div className="flex justify-between">
                     <PlusCard top="Zarlaga" bottom="Nemeh" height="40" />
                     <BigCard
                         header="Expenses"
